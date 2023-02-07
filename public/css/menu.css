@@ -1,0 +1,676 @@
+#menu_banner {
+  background-image: url("/images/menu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 621px;
+  height: 100%;
+  background-position-x: right;
+}
+#menu_banner .menu_wrapper {
+  padding-top: 45px;
+}
+@media (max-width: 991px) {
+  #menu_banner .menu_wrapper {
+    padding-top: 113px;
+  }
+}
+#menu_banner .menu_wrapper .menu_info .heading .offer {
+  margin: 0;
+}
+@media (max-width: 991px) {
+  #menu_banner .menu_wrapper .menu_info .heading .yellow {
+    line-height: 17px;
+  }
+}
+#menu_banner .menu_wrapper .menu_info .description {
+  margin-top: 30px;
+}
+#menu_banner .menu_wrapper .menu_info .description p {
+  color: var(--white-color);
+  font-family: var(--font-regular);
+  font-size: 20px;
+}
+@media (max-width: 991px) {
+  #menu_banner .menu_wrapper .menu_info .description p {
+    font-size: 16px;
+  }
+}
+#menu_banner .image-wrapper {
+  position: relative;
+  bottom: -119px;
+}
+@media (max-width: 991px) {
+  #menu_banner .image-wrapper {
+    bottom: -44px;
+  }
+}
+
+#menu {
+  margin-top: 220px;
+  position: relative;
+}
+#menu:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 1523px 461px;
+  top: 0;
+  background-image: url("/images/vectormenu.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  z-index: -1;
+}
+@media (max-width: 1200px) {
+  #menu {
+    margin-top: 122px;
+  }
+}
+#menu:before {
+  content: "";
+  position: absolute;
+  background-image: url("/images/brown.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 680px;
+  width: 100%;
+  height: 167px;
+  top: -220px;
+  right: 0;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  #menu:before {
+    display: none;
+  }
+}
+#menu .headers .heading {
+  position: relative;
+}
+#menu .headers .heading:before {
+  content: "";
+  position: absolute;
+  background-image: url("/images/Logo-Doppio_final-04.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 930px;
+  width: 100%;
+  height: 162px;
+  z-index: -1;
+  top: -174px;
+  left: 47px;
+}
+@media (max-width: 991px) {
+  #menu .headers .heading:before {
+    background-image: url("/images/Logo-Doppio_final-04mobile.png");
+    max-width: 357px;
+    height: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 47px;
+  }
+}
+#menu .headers .heading .offer {
+  color: var(--color-secondary);
+  font-size: 48px;
+  line-height: 29px;
+}
+@media (max-width: 991px) {
+  #menu .headers .heading .offer {
+    font-size: 30px;
+    margin: auto;
+  }
+}
+#menu .headers .heading .yellow {
+  font-size: 48px;
+}
+@media (max-width: 991px) {
+  #menu .headers .heading .yellow {
+    font-size: 30px;
+    width: 80%;
+    margin: auto;
+  }
+}
+#menu .headers .heading .yellow .different {
+  margin-left: 0;
+}
+#menu .headers .description {
+  margin: 65px auto;
+  font-size: 20px;
+  width: 100%;
+  max-width: 880px;
+}
+@media (max-width: 991px) {
+  #menu .headers .description {
+    font-size: 14px;
+    padding: 0 20px;
+    margin: 15px auto;
+  }
+}
+#menu .headers .description .simple-text {
+  font-family: var(--font-regular);
+  margin-top: 40px;
+}
+#menu .meniu-oferte {
+  position: relative;
+}
+#menu .meniu-oferte:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  max-width: 1415px;
+  height: 2px;
+  top: 45px;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: #c9c9c9;
+}
+#menu .meniu-oferte .oferte .menu_slider .owl-stage {
+  margin: auto;
+}
+#menu .meniu-oferte .oferte .menu_slider .owl-stage .owl-item {
+  position: relative;
+  height: 55px;
+}
+@media (min-width: 992px) {
+  #menu .meniu-oferte .oferte .menu_slider .owl-stage .owl-item.activ::before {
+    position: absolute;
+    content: "";
+    background: var(--color-tertiary);
+    height: 4px;
+    width: 100%;
+    left: 0px;
+    background-repeat: no-repeat;
+    top: 43px;
+  }
+  #menu .meniu-oferte .oferte .menu_slider .owl-stage .owl-item.activ:after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    left: 50%;
+    transform: translateY(-50%) rotateZ(90deg);
+    border-left: 10px solid var(--color-tertiary);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    bottom: -15px;
+  }
+}
+@media (max-width: 991px) {
+  #menu .meniu-oferte .oferte .menu_slider .owl-stage .owl-item {
+    height: 55px;
+  }
+  #menu .meniu-oferte .oferte .menu_slider .owl-stage .owl-item.center:before {
+    content: "";
+    position: absolute;
+    background: white;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 9%, white 41%, rgba(255, 255, 255, 0.924807423) 72%);
+  }
+  #menu .meniu-oferte .oferte .menu_slider .owl-stage .owl-item.center:after {
+    content: "";
+    position: absolute;
+    background-image: url("/images/before.png");
+    width: 100%;
+    max-width: 127px;
+    height: 10px;
+    top: 44px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+#menu .meniu-oferte .oferte .menu_slider .owl-stage .owl-item .choose span {
+  font-size: 16px;
+  font-family: var(--font-extra-bold);
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#menu .meniu-oferte .oferte .menu_slider .owl-stage .owl-item .choose span.active {
+  color: var(--color-primary);
+}
+#menu .meniu-oferte .products {
+  margin-top: 85px;
+}
+#menu .meniu-oferte .products .product {
+  background-image: url("/images/productbg.jpg");
+  background-repeat: no-repeat;
+  margin: auto;
+  width: 100%;
+  max-width: 1178px;
+  height: 100%;
+  min-height: 423px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu .meniu-oferte .products .product:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  #menu .meniu-oferte .products .product {
+    flex-direction: column-reverse;
+    background-image: url("/images/productbgmobile1.jpg");
+    min-height: 483px;
+    background-position-x: center;
+  }
+}
+#menu .meniu-oferte .products .product.reverse {
+  background-image: url("/images/productbgreverse.jpg");
+  background-repeat: no-repeat;
+  margin: auto;
+  width: 100%;
+  max-width: 1178px;
+  height: 100%;
+  min-height: 423px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+@media (max-width: 991px) {
+  #menu .meniu-oferte .products .product.reverse {
+    flex-direction: column-reverse;
+    background-image: url("/images/productbgmobile1.jpg");
+    min-height: 483px;
+    background-position-x: center;
+  }
+}
+#menu .meniu-oferte .products .product.reverse .image-wrapper {
+  right: -98px;
+}
+@media (max-width: 1400px) {
+  #menu .meniu-oferte .products .product.reverse .image-wrapper {
+    right: -72px;
+  }
+}
+@media (max-width: 991px) {
+  #menu .meniu-oferte .products .product.reverse .image-wrapper {
+    width: 100%;
+    left: initial;
+    right: initial;
+  }
+}
+#menu .meniu-oferte .products .product .image-wrapper {
+  position: relative;
+  right: 93px;
+  width: 50%;
+}
+@media (max-width: 1400px) {
+  #menu .meniu-oferte .products .product .image-wrapper {
+    right: 71px;
+  }
+}
+@media (max-width: 991px) {
+  #menu .meniu-oferte .products .product .image-wrapper {
+    width: 100%;
+    left: initial;
+    right: initial;
+  }
+}
+@media (max-width: 756px) {
+  #menu .meniu-oferte .products .product .image-wrapper {
+    max-width: 302px;
+    height: 166px;
+    width: 100%;
+  }
+}
+#menu .meniu-oferte .products .product .product_info {
+  width: 40%;
+}
+@media (max-width: 991px) {
+  #menu .meniu-oferte .products .product .product_info {
+    width: 100%;
+    padding: 50px 20px 0;
+  }
+}
+#menu .meniu-oferte .products .product .product_info .headers {
+  margin-bottom: 21px;
+}
+#menu .meniu-oferte .products .product .product_info .headers .price_title {
+  margin: 0;
+  line-height: 30px;
+}
+#menu .meniu-oferte .products .product .product_info .second_title {
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-family: var(--font-extra-bold);
+  margin-bottom: 20px;
+  display: flex;
+  font-size: 13px;
+  margin-top: 20px;
+}
+@media (max-width: 991px) {
+  #menu .meniu-oferte .products .product .product_info .second_title {
+    margin-top: 18px;
+  }
+}
+#menu .meniu-oferte .products .product .content_info {
+  margin-left: 31px;
+}
+@media (max-width: 991px) {
+  #menu .meniu-oferte .products .product .content_info {
+    margin-left: 17px;
+  }
+}
+#menu .meniu-oferte .products .product .content_info .ingredients li {
+  position: relative;
+  color: var(--white-color);
+  font-family: var(--font-regular);
+  font-size: 14px;
+  line-height: 28px;
+}
+@media (max-width: 991px) {
+  #menu .meniu-oferte .products .product .content_info .ingredients li {
+    font-size: 13px;
+  }
+}
+#menu .meniu-oferte .products .product .content_info .ingredients li:before {
+  content: "";
+  position: absolute;
+  background-color: var(--white-color);
+  border-radius: 50px;
+  width: 5px;
+  height: 5px;
+  top: 11px;
+  left: -16px;
+}
+#menu .meniu-oferte .products .product .content_info .price {
+  margin-top: 23px;
+}
+#menu .meniu-oferte .products .product .content_info .price p {
+  font-size: 56px;
+  color: var(--white-color);
+  font-family: var(--font-extra-bold);
+}
+@media (max-width: 991px) {
+  #menu .meniu-oferte .products .product .content_info .price p {
+    font-size: 38px;
+  }
+}
+#menu .meniu-oferte .products .product .content_info .price p span {
+  font-size: 32px;
+}
+@media (max-width: 991px) {
+  #menu .meniu-oferte .products .product .content_info .price p span {
+    font-size: 20px;
+  }
+}
+
+#partners {
+  position: relative;
+  margin-top: 170px;
+}
+@media (max-width: 991px) {
+  #partners {
+    margin-top: 72px;
+  }
+}
+#partners:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  max-width: 1415px;
+  height: 2px;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: #c9c9c9;
+}
+@media (max-width: 1200px) {
+  #partners:before {
+    width: 90%;
+  }
+}
+@media (max-width: 576px) {
+  #partners {
+    background-image: unset;
+  }
+}
+#partners #partners {
+  padding-bottom: 10px;
+}
+#partners #partners .headers {
+  padding-top: 145px;
+}
+#partners #partners .headers .heading .offer {
+  font-size: 48px;
+}
+@media (max-width: 991px) {
+  #partners #partners .headers .heading .offer {
+    font-size: 30px;
+  }
+}
+#partners #partners .headers .heading .different {
+  font-size: 105px;
+  text-align: center;
+  display: block;
+}
+@media (max-width: 991px) {
+  #partners #partners .headers .heading .different {
+    font-size: 56px;
+  }
+}
+#partners #partners .headers .description {
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: var(--font-regular);
+  color: var(--color-primary-contrast);
+}
+@media (max-width: 991px) {
+  #partners #partners .headers .description {
+    font-size: 16px;
+  }
+}
+#partners #partners .partners-carousel {
+  margin: 90px 0;
+}
+@media (max-width: 991px) {
+  #partners #partners .partners-carousel {
+    margin: 30px 0;
+  }
+}
+#partners #partners .partners-carousel .owl-dots {
+  position: absolute;
+  bottom: -33px;
+  left: 7%;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  #partners #partners .partners-carousel .owl-dots {
+    bottom: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+#partners #partners .partners-carousel .owl-dots .owl-dot span {
+  width: 6px;
+  height: 6px;
+}
+#partners #partners .partners-carousel .owl-dots .owl-dot:hover span {
+  background-color: var(--color-primary);
+}
+#partners #partners .partners-carousel .owl-dots .active span {
+  width: 17.99px;
+  height: 8.99px;
+  background-color: var(--color-primary);
+}
+#partners #partners .partners-carousel .owl-nav {
+  position: absolute;
+  right: 7%;
+  pointer-events: none;
+}
+@media (max-width: 991px) {
+  #partners #partners .partners-carousel .owl-nav {
+    bottom: -69px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+#partners #partners .partners-carousel .owl-nav button {
+  margin: 0 10px;
+  pointer-events: all;
+}
+@media (max-width: 991px) {
+  #partners #partners .partners-carousel .owl-nav button {
+    margin: 0 70px !important;
+  }
+}
+#partners #partners .partners-carousel.owl-theme .owl-nav [class*=owl-]:hover {
+  background: none;
+}
+#partners #partners .container-partners .container-img {
+  width: 57%;
+  margin: auto;
+}
+#partners #partners .container-partners .container-img .content {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+#partners #partners .container-partners svg {
+  width: auto;
+  max-width: 130px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(101%);
+}
+#partners #partners .social, #partners #partners .email {
+  top: 37%;
+}
+@media (max-width: 991px) {
+  #partners #partners .social {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 1844px) {
+  #partners #partners .container-partners .container-img {
+    width: 67%;
+  }
+}
+@media (max-width: 1200px) {
+  #partners #partners .container-partners .container-img {
+    width: 77%;
+  }
+}
+@media (max-width: 991px) {
+  #partners #partners .container-partners .container-img {
+    width: 60%;
+  }
+  #partners #partners .container-partners .container-img .content {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  #partners #partners {
+    background-image: url("/images/background-partners-mobile.jpg");
+    background-position: center;
+  }
+  #partners #partners .container-partners .container-img {
+    width: 100%;
+  }
+}
+#partners .container-partners svg {
+  filter: invert(0);
+}
+#partners .parteners-wrapper {
+  padding-top: 150px;
+  position: relative;
+}
+@media (max-width: 991px) {
+  #partners .parteners-wrapper {
+    padding-top: 70px;
+  }
+}
+#partners .parteners-wrapper:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 1534px 457px;
+  top: 0;
+  background-image: url("/images/coffeeparte.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  z-index: -1;
+}
+#partners .parteners-wrapper .social, #partners .parteners-wrapper .email {
+  display: none;
+}
+#partners .parteners-wrapper .social p, #partners .parteners-wrapper .email p {
+  color: var(--color-secondary);
+}
+#partners .parteners-wrapper .social svg, #partners .parteners-wrapper .email svg {
+  filter: invert(0);
+}
+#partners .parteners-wrapper .headers {
+  padding-top: 0;
+  position: relative;
+}
+#partners .parteners-wrapper .headers:before {
+  content: "";
+  position: absolute;
+  background-image: url("/images/Logo-Doppio_final-04.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 930px;
+  width: 100%;
+  height: 162px;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -103px;
+}
+@media (max-width: 991px) {
+  #partners .parteners-wrapper .headers:before {
+    background-image: url("/images/Logo-Doppio_final-04mobile.png");
+    max-width: 357px;
+    height: 64px;
+    top: -39px;
+  }
+}
+#partners .parteners-wrapper .headers .heading .offer {
+  color: var(--color-secondary);
+}
+#partners .parteners-wrapper .headers .heading .different {
+  text-shadow: none;
+}
+#partners .parteners-wrapper .headers .description {
+  color: var(--color-secondary);
+}
+#partners .parteners-wrapper .owl-nav button {
+  margin: 0 10px;
+  pointer-events: all;
+}
+#partners .parteners-wrapper .owl-nav button img {
+  filter: invert(1) sepia(100%) saturate(20%) hue-rotate(333deg) brightness(99%) contrast(104%);
+}
+#partners .parteners-wrapper.owl-theme .owl-nav [class*=owl-]:hover {
+  background: none;
+}
+#partners .parteners-wrapper .owl-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+#partners .parteners-wrapper .owl-dots .owl-dot span {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-secondary);
+}
+#partners .parteners-wrapper .owl-dots .owl-dot:hover span {
+  background-color: var(--color-primary);
+}
+#partners .parteners-wrapper .owl-dots .active span {
+  width: 17.99px;
+  height: 8.99px;
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 1199px) {
+  #social-media {
+    margin-top: 113px;
+  }
+}

@@ -1,0 +1,39 @@
+.title-section {
+    font-size: 48px;
+    font-family: var(--font-extra-bold);
+    display: flex;
+    flex-direction: column;
+    .add-margin {
+        margin-top: -60px;
+        display: flex;
+        align-items: center;
+        .span-normal {
+            color: var(--color-primary);
+            margin-top: 10px;
+        }
+        .span-adl {
+            font-size: 105.44px;
+            font-family: var(--font-ADLMounTiane);
+            color: var(--color-primary);
+            margin-left: 20px;
+        }
+    }
+    @media (max-width: 1844px) {
+        font-size: 39px;
+        .add-margin {
+            margin-top: -50px;
+            .span-adl {
+                font-size: 85px;
+            }
+        }
+    }
+    @media (max-width: 1509px) {
+        font-size: 30px;
+        .add-margin {
+            margin-top: -35px;
+            .span-adl {
+                font-size: 56px;
+            }
+        }
+    }
+}

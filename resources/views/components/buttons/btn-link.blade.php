@@ -1,0 +1,1 @@
+<a href="{{$link}}" class="btn-link {{$class}}">{{$text}}</a>

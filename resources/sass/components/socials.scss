@@ -1,0 +1,106 @@
+.email {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-10%);
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    transition: 350ms ease;
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    svg {
+        margin-bottom: 10px;
+        filter: invert(100%) sepia(0%) saturate(7494%) hue-rotate(351deg) brightness(100%) contrast(102%);
+    }
+    p {
+        color: var(--color-primary-contrast);
+        font-family: var(--font-medium);
+        font-size: 13px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+    &:hover {
+        svg {
+            filter: invert(91%) sepia(27%) saturate(4950%) hue-rotate(324deg) brightness(100%) contrast(75%);
+        }
+        p {
+            color: var(--color-primary);
+        }
+    }
+}
+.social {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-20%);
+    left: 40px;
+    z-index: 1;
+    a {
+        transition: 350ms ease;
+        p {
+            color: var(--color-primary-contrast);
+            font-family: var(--font-medium);
+            font-size: 13px;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg);
+        }
+        svg {
+            margin: 10px 0 30px;
+            filter: invert(100%) sepia(0%) saturate(7494%) hue-rotate(351deg) brightness(100%) contrast(102%);
+        }
+        &:hover {
+            svg {
+                filter: invert(91%) sepia(27%) saturate(4950%) hue-rotate(324deg) brightness(100%) contrast(75%);
+            }
+            p {
+                color: var(--color-primary);
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .social {
+        position: relative;
+        transform: none;
+        left: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        a {
+            p {
+                display: none;
+            }
+            svg {
+                transform: rotate(90deg);
+                width: 18px;
+                margin: 0 10px;
+            }
+        }
+    }
+    .email {
+        position: relative;
+        transform: none;
+        right: auto;
+        margin-top: 25px;
+        a {
+            display: flex;
+            flex-direction: row;
+            svg {
+                transform: rotate(-90deg);
+                margin-right: 10px;
+                margin-bottom: 0;
+            }
+            p {
+                writing-mode: initial;
+            }
+        }
+    }
+}

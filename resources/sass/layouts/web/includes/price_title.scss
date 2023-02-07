@@ -1,0 +1,30 @@
+.price_title{
+    font-size: 80px;
+    color: var(--color-primary);
+    font-family: var(--font-ADLMounTiane);
+    transition: all .65s ease-out;
+
+    @media(min-width: 991px){
+        &:hover{
+            color: var(--white-color);
+        }
+    }
+    @media(max-width: 991px) {
+        font-size: 56px;
+    }
+}
+.price_name{
+    color: var(--white-color);
+    font-size: 32px;
+    transition: all .65s ease-out;
+
+    font-family: var(--font-extra-bold);
+    @media(min-width: 991px){
+        &:hover{
+            color: var(--color-primary);
+        }
+    }
+    @media(max-width: 991px) {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,24 @@
+input,
+textarea {
+    width: 100%;
+    padding: 15px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--color-tertiary-light);
+    outline: none;
+    font-size: 14px;
+    font-family: var(--font-regular);
+    color: var(--color-tertiary-light);
+    &::placeholder {
+        font-size: 14px;
+        font-family: var(--font-regular);
+        color: var(--color-tertiary-light);
+    }
+    &:focus {
+        border-bottom: 2px solid var(--color-primary);
+        color: var(--color-primary-contrast);
+        &::placeholder {
+            color: var(--color-primary-contrast);
+        }
+    }
+}

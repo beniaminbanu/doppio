@@ -1,0 +1,120 @@
+footer {
+    padding: 100px 0 55px;
+    .logo {
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+    .contact {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            font-size: 15px;
+            line-height: 28px;
+            font-family: var(--font-regular);
+            span {
+                &:first-child {
+                    font-family: var(--font-bold);
+                }
+            }
+            a {
+                transition: 350ms ease;
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+    .option {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        li {
+            margin: 0 20px;
+            position: relative;
+            a {
+                font-size: 18px;
+                font-family: var(--font-bold);
+                transition: 350ms ease;
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+            &:not(:last-child) {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background-color: var(--color-secondary);
+                    right: -21.5px;
+                    top: 44%;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .copyright {
+        font-size: 11px;
+        font-family: var(--font-regular);
+        margin-top: 50px;
+        justify-content: center;
+        display: flex;
+        p {
+            &:nth-child(2) {
+                margin-left: 5px;
+            }
+        }
+        span {
+            font-family: var(--font-extra-bold);
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    footer {
+        padding: 55px 0 40px;
+        .logo {
+            img {
+                width: 297px;
+                max-width: 90%;
+            }
+        }
+        .contact {
+            p {
+                font-size: 13px;
+                line-height: 18px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+        .option {
+            margin-top: 20px;
+            flex-direction: column;
+            text-align: center;
+            line-height: 36px;
+            li {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        .copyright {
+            flex-direction: column;
+            text-align: center;
+            p {
+                &:nth-child(2) {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

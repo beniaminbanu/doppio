@@ -1,0 +1,43 @@
+.offer {
+    font-family: var(--font-black);
+    color: var(--color-primary-contrast);
+    font-size: 90px;
+
+    text-transform: uppercase;
+    @media(max-width: 991px){
+        font-size: 40px;
+    }
+}
+    .yellow{
+        font-family: var(--font-extra-bold);
+        color: var(--color-primary);
+        font-size: 60px;
+        line-height: 37px;
+        @media(max-width: 991px){
+            font-size: 24px;
+        }
+
+        .offer {
+            font-family: var(--font-extra-bold);
+            color: var(--color-primary-contrast);
+            font-size: 60px;
+            @media(max-width: 991px){
+                font-size: 24px;
+            }
+
+        }
+        .different {
+            color: var(--color-primary);
+            font-family: var(--font-ADLMounTiane);
+            font-size: 130px;
+            margin-left: 15px;
+            text-shadow: -9px 0px 23px black;
+            @media(max-width: 991px){
+                font-size: 72px;
+            }
+
+        }
+    }
+
+
+

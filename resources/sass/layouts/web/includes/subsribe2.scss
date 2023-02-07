@@ -1,0 +1,145 @@
+#subscribe2 {
+    background-image: url("/images/containerheroimg.jpg");
+    background-repeat: no-repeat;
+    //background-size: 1174px 480px;
+    background-position-x: center;
+    margin-top: 85px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .slogan {
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+        text-align: center;
+        right: 50%;
+        transform: translateX(50%);
+        @media(max-width: 500px) {
+            bottom: 80px;
+        }
+        @media(max-width: 991px) {
+            position: relative;
+        }
+
+        p {
+            color: var(--color-secondary);
+        }
+    }
+
+    .social, .email {
+        filter: invert(1);
+        transform: translateY(-50%);
+    }
+    .social{
+        @media(max-width: 991px){
+            margin-top: 0;
+        }
+    }
+
+    .content {
+        padding: 115px 0;
+        position: relative;
+        z-index: 1;
+        @media(max-width: 1200px) {
+            padding: 50px 0;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            background-image: url("/images/coffeblog.png");
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: top;
+            background-size: 1303px 352px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            @media(max-width: 700px){
+                background-image: url("/images/coffeblogmobile.png");
+                background-size: 359px 170px;
+            }
+        }
+
+        .title {
+            font-size: 36px;
+            font-family: var(--font-bold);
+            text-align: center;
+            @media(max-width: 1200px) {
+                font-size: 24px;
+                padding: 0 10px;
+            }
+        }
+
+        .description {
+            margin: 40px auto 0;
+            font-size: 18px;
+            font-family: var(--font-regular);
+            line-height: 32px;
+            width: 35%;
+            text-align: center;
+            @media(max-width: 1200px) {
+                font-size: 14px;
+                padding: 0 20px;
+                width: 100%;
+            }
+        }
+
+        .subscribe {
+            margin: 45px auto 85px;
+            border: none;
+            background-color: var(--color-primary);
+            color: var(--color-primary-contrast);
+            transition: all .65s ease-out;
+
+            &:hover,
+            &.active-subscribe {
+                background-color: var(--color-tertiary);
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    #subscribe {
+        .description {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    #subscribe {
+        width: 100%;
+        padding-top: 115px;
+        background-image: url("/images/background-subscribe-mobile.png");
+        background-position: bottom center;
+        background-size: contain;
+
+        .title {
+            font-size: 24px;
+            line-height: 32px;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        .description {
+            font-size: 14px;
+            line-height: 24px;
+            width: 70%;
+        }
+
+        .subscribe {
+            margin: 45px auto 55px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #subscribe {
+        .description {
+            width: 90%;
+        }
+    }
+}

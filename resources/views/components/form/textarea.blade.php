@@ -1,0 +1,1 @@
+<textarea class="{{$class}} input" name="{{$name}}" data-name="{{$dataname}}" placeholder="{{$placeholder}}">{{$text}}</textarea>

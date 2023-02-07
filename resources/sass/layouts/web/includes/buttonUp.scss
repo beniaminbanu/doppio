@@ -1,0 +1,18 @@
+.buttonUp {
+    background-color: var(--color-tertiary);
+    width: 53.99px;
+    height: 53.99px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 19;
+    .logo-hamburger {
+       max-width: 100%;
+        width: 19px;
+        height: 27px;
+    }
+}

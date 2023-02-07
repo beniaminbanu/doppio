@@ -1,0 +1,412 @@
+#blog {
+    background-image: url("/images/background-andouille-first.png"), url("/images/background-blog-second.png");
+    background-repeat: no-repeat;
+    background-size: 310px, 360px;
+    background-position: top 400px left 1%, top 200px right 7%;
+    .logo {
+        padding: 95px 0 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        .logo-image {
+            margin-bottom: 40px;
+            width: 215px;
+            max-width: 100%;
+            filter: invert(35%) sepia(26%) saturate(853%) hue-rotate(352deg) brightness(90%) contrast(89%);
+        }
+        .background-image {
+            filter: invert(1);
+            position: absolute;
+            width: 930px;
+            max-width: 90%;
+            top: 130px;
+            pointer-events: none;
+        }
+        .description {
+            font-size: 18px;
+            line-height: 32px;
+            font-family: var(--font-regular);
+            width: 34%;
+            text-align: center;
+        }
+    }
+    .title-section {
+        margin-left: 20%;
+        margin-bottom: 50px;
+        .first {
+            font-size: 70px;
+        }
+        .add-margin {
+            margin-top: -57px;
+            .span-adl {
+                font-size: 141.73px;
+                margin-top: -35px;
+            }
+        }
+    }
+    .blog-carousel {
+        width: 80%;
+        .owl-dots {
+            position: absolute;
+            bottom: 60px;
+            left: 8%;
+            display: flex;
+            align-items: center;
+            .owl-dot {
+                span {
+                    width: 6px;
+                    height: 6px;
+                }
+                &:hover {
+                    span {
+                        background-color: var(--color-primary);
+                    }
+                }
+            }
+            .active {
+                span {
+                    width: 17.99px;
+                    height: 8.99px;
+                    background-color: var(--color-primary);
+                }
+            }
+        }
+        .owl-nav {
+            position: absolute;
+            right: 8%;
+            bottom: 56px;
+            pointer-events: none;
+            button {
+                margin: 0 10px;
+                pointer-events: all;
+                img {
+                    filter: invert(1);
+                }
+            }
+        }
+        &.owl-theme {
+            .owl-nav [class*="owl-"]:hover {
+                background: none;
+            }
+        }
+    }
+    .container-card {
+        position: relative;
+    }
+    .card-blog {
+        background-color: var(--color-quaternary);
+        padding: 140px 0 260px 20%;
+        .title {
+            font-size: 36px;
+            font-family: var(--font-black);
+            line-height: 48px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            img {
+                position: absolute;
+                bottom: -5px;
+                left: 440px;
+                width: 138px;
+                max-width: 100%;
+                pointer-events: none;
+            }
+        }
+        .name {
+            font-size: 16px;
+            font-family: var(--font-extra-bold);
+            line-height: 28px;
+            margin-top: 30px;
+            span {
+                &:not(:first-child) {
+                    font-family: var(--font-bold);
+                }
+                &:nth-child(2) {
+                    margin-left: 10px;
+                }
+            }
+        }
+        .description {
+            margin-top: 60px;
+            font-size: 20px;
+            font-family: var(--font-regular);
+            line-height: 32px;
+            width: 50%;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .blog {
+        margin-top: 65px;
+        color: var(--color-secondary);
+        border: 2px solid var(--color-secondary);
+        transition: 350ms ease;
+        position: absolute;
+        bottom: 160px;
+        z-index: 1;
+        left: 16%;
+        &:hover {
+            background-color: var(--color-primary);
+            color: var(--color-primary-contrast);
+        }
+    }
+    .image-blog {
+        position: absolute;
+        top: 45px;
+        right: 5%;
+        z-index: 1;
+        width: 40%;
+        img {
+            max-width: 100%;
+        }
+        .slogan {
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            p {
+                color: var(--color-secondary);
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    #blog {
+        .image-blog {
+            width: 35%;
+        }
+    }
+}
+@media (max-width: 1250px) {
+    #blog {
+        .image-blog {
+            width: 33%;
+        }
+    }
+}
+@media (max-width: 1199px) {
+    #blog {
+        background-size: 144px, 266px;
+        background-position: top 400px left -7%, top 270px right -20%;
+        .logo {
+            padding: 130px 0 70px;
+            .logo-image {
+                width: 164px;
+                margin-bottom: 35px;
+            }
+            .background-image {
+                width: 600px;
+                top: 170px;
+            }
+            .description {
+                font-size: 14px;
+                line-height: 24px;
+                width: 50%;
+            }
+        }
+        .title-section {
+            margin: 0 auto 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            .first {
+                font-size: 40px;
+            }
+            .add-margin {
+                display: flex;
+                flex-direction: column;
+                margin-top: -15px;
+                .span-adl {
+                    font-size: 72px;
+                    margin-top: -48px;
+                    margin-left: 0;
+                }
+            }
+        }
+        .blog-carousel {
+            width: initial;
+            .owl-dots {
+                bottom: initial;
+                left: 15%;
+                top: 415px;
+            }
+            .owl-nav {
+                left: 10%;
+                right: initial;
+                width: 200px;
+                display: flex;
+                justify-content: space-between;
+                bottom: initial;
+                top: 400px;
+            }
+        }
+        .card-blog {
+            padding: 60px 10% 385px;
+            .title {
+                font-size: 21px;
+                line-height: 29px;
+                img {
+                    left: 202px;
+                    bottom: -10px;
+                }
+            }
+            .name {
+                font-size: 14px;
+                margin-top: 25px;
+            }
+            .description {
+                margin-top: 25px;
+                font-size: 16px;
+                line-height: 28px;
+                width: 100%;
+            }
+        }
+        .blog {
+            left: 10%;
+            bottom: initial;
+            top: 250px;
+        }
+        .image-blog {
+            width: 100%;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -200px;
+            img {
+                width: 640px;
+                max-width: 90%;
+                height: 100%;
+            }
+            .slogan {
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    #blog {
+        .blog-carousel {
+            .owl-dots {
+                left: 16%;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    #blog {
+        .logo {
+            .description {
+                width: 70%;
+            }
+        }
+        .blog-carousel {
+            .owl-dots {
+                left: 17.5%;
+            }
+        }
+    }
+}
+@media (max-width: 667px) {
+    #blog {
+        .blog-carousel {
+            .owl-dots {
+                left: 18.5%;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    #blog {
+        .logo {
+            .description {
+                width: 91%;
+            }
+        }
+        .card-blog {
+            padding: 60px 5% 385px;
+        }
+        .blog {
+            left: 5%;
+        }
+        .blog-carousel {
+            .owl-nav {
+                left: 5%;
+            }
+            .owl-dots {
+                left: 14.5%;
+                @media (max-width: 520px) {
+                    left: 16%;
+                }
+                @media (max-width: 467px) {
+                    left: 17%;
+                }
+                @media (max-width: 420px) {
+                    left: 18%;
+                }
+                @media (max-width: 385px) {
+                    left: 19%;
+                }
+                @media (max-width: 360px) {
+                    left: 20%;
+                }
+                @media (max-width: 350px) {
+                    left: 21%;
+                }
+                @media (max-width: 385px) {
+                    left: 22%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 475px) {
+    #blog {
+        .image-blog {
+            .slogan {
+                bottom: -40px;
+                p {
+                    &:first-child {
+                        font-size: 64px;
+                    }
+                    &:nth-child(2) {
+                        margin-top: -30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 390px) {
+    #blog {
+        .title-section {
+            font-size: 36px;
+            .first {
+                font-size: 36px;
+            }
+            .add-margin {
+                .span-adl {
+                    font-size: 68px;
+                    margin-top: -44px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 350px) {
+    #blog {
+        .card-blog {
+            .title {
+                font-size: 19px;
+                img {
+                    left: 183px;
+                }
+            }
+        }
+    }
+}

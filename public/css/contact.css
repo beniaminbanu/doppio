@@ -1,0 +1,759 @@
+@charset "UTF-8";
+#contact_banner {
+  background-image: url("/images/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 621px;
+  height: 100%;
+  background-position-x: center;
+}
+#contact_banner .social, #contact_banner .email {
+  transform: translateY(-50%);
+}
+#contact_banner .content_banner {
+  padding-top: 90px;
+}
+@media (max-width: 991px) {
+  #contact_banner .content_banner {
+    padding-top: 160px;
+  }
+}
+#contact_banner .content_banner .headers {
+  max-width: 1000px;
+  width: 100%;
+}
+#contact_banner .content_banner .headers .heading .offer {
+  line-height: 48px;
+  font-size: 56px;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  #contact_banner .content_banner .headers .heading .offer {
+    font-size: 28px;
+    line-height: 10px;
+  }
+}
+#contact_banner .content_banner .headers .heading .yellow {
+  line-height: 68px;
+  text-align: center;
+  font-size: 56px;
+}
+@media (max-width: 991px) {
+  #contact_banner .content_banner .headers .heading .yellow {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+#contact_banner .content_banner .headers .heading .yellow .different {
+  font-size: 105px;
+}
+@media (max-width: 991px) {
+  #contact_banner .content_banner .headers .heading .yellow .different {
+    text-align: center;
+    display: block;
+    font-size: 72px;
+  }
+}
+#contact_banner .content_banner .headers .description {
+  margin-top: 25px;
+  font-size: 24px;
+}
+#contact_banner .content_banner .headers .description p {
+  font-size: 20px;
+  font-family: var(--font-regular);
+  color: var(--white-color);
+}
+@media (max-width: 991px) {
+  #contact_banner .content_banner .headers .description p {
+    font-size: 16px;
+  }
+}
+#contact_banner .content_banner .program {
+  margin-top: 80px;
+}
+@media (max-width: 991px) {
+  #contact_banner .content_banner .program {
+    margin-top: 40px;
+  }
+}
+#contact_banner .content_banner .program .ora h4, #contact_banner .content_banner .program .ora span {
+  color: var(--white-color);
+  font-family: var(--font-regular);
+  font-size: 24px;
+}
+@media (max-width: 991px) {
+  #contact_banner .content_banner .program .ora h4, #contact_banner .content_banner .program .ora span {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+#contact_banner .content_banner .program .ora h4 p, #contact_banner .content_banner .program .ora span p {
+  font-family: var(--font-bold);
+  color: var(--white-color);
+  font-size: 24px;
+}
+@media (max-width: 991px) {
+  #contact_banner .content_banner .program .ora h4 p, #contact_banner .content_banner .program .ora span p {
+    font-size: 20px;
+  }
+}
+#contact_banner .content_banner .program .comanda {
+  margin-top: 35px;
+}
+#contact_banner .content_banner .program .comanda p {
+  font-family: var(--font-bold);
+  color: var(--white-color);
+  font-size: 24px;
+}
+@media (max-width: 991px) {
+  #contact_banner .content_banner .program .comanda p {
+    font-size: 20px;
+  }
+}
+#contact_banner .content_banner .program .comanda p span {
+  color: var(--color-primary);
+}
+#contact_banner .content_banner .program .comanda span {
+  color: var(--color-primary);
+  font-size: 24px;
+  font-family: var(--font-bold);
+}
+@media (max-width: 991px) {
+  #contact_banner .content_banner .program .comanda span {
+    font-size: 20px;
+  }
+}
+
+#formular {
+  margin-top: 132px;
+  position: relative;
+}
+#formular::before {
+  position: absolute;
+  content: "";
+  background-image: url("/images/contact33.png");
+  background-repeat: no-repeat;
+  background-size: 1765px 334px;
+  background-position-x: center;
+  background-position-y: center;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  #formular {
+    margin-top: 80px;
+  }
+}
+#formular .headers .heading {
+  position: relative;
+}
+#formular .headers .heading:before {
+  content: "";
+  position: absolute;
+  background-image: url("/images/Logo-Doppio_final-04.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 930px;
+  width: 100%;
+  height: 162px;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 47px;
+}
+@media (max-width: 991px) {
+  #formular .headers .heading:before {
+    background-image: url("/images/Logo-Doppio_final-04mobile.png");
+    max-width: 357px;
+    height: 64px;
+  }
+}
+#formular .headers .heading .offer {
+  color: var(--color-secondary);
+  font-size: 48px;
+  line-height: 29px;
+}
+@media (max-width: 991px) {
+  #formular .headers .heading .offer {
+    font-size: 30px;
+    width: 80%;
+    margin: auto;
+  }
+}
+#formular .headers .heading .different {
+  font-size: 105px;
+  text-shadow: none;
+}
+@media (max-width: 991px) {
+  #formular .headers .heading .different {
+    font-size: 56px;
+  }
+}
+#formular .headers .description {
+  margin: 65px auto;
+  font-size: 20px;
+  width: 100%;
+  max-width: 880px;
+}
+@media (max-width: 991px) {
+  #formular .headers .description {
+    font-size: 14px;
+    padding: 0 20px;
+    margin: 15px auto;
+  }
+}
+#formular .headers .description .simple-text {
+  font-family: var(--font-regular);
+  margin-top: 40px;
+}
+#formular .reservation-form {
+  max-width: 975px;
+  width: 100%;
+  background-color: var(--color-tertiary);
+  margin-top: 15px;
+  position: relative;
+}
+#formular .reservation-form form {
+  max-width: 60%;
+  margin: auto;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  #formular .reservation-form form {
+    max-width: 90%;
+  }
+}
+#formular .reservation-form .description {
+  font-size: 18px;
+  font-family: var(--font-regular);
+  line-height: 32px;
+  color: var(--color-primary-contrast);
+  text-align: center;
+  margin: 70px auto 20px;
+  width: 65%;
+}
+#formular .reservation-form .logo-final {
+  position: absolute;
+  top: 45px;
+  max-width: 90%;
+  pointer-events: none;
+}
+#formular .reservation-form .input-container {
+  position: relative;
+  margin-top: 20px;
+}
+#formular .reservation-form .input-container textarea {
+  resize: none;
+}
+#formular .reservation-form .input-container .input {
+  color: var(--color-primary-contrast);
+}
+#formular .reservation-form .input-container .input:focus {
+  position: relative;
+  z-index: 1;
+}
+#formular .reservation-form .input-container #pnumber {
+  -moz-appearance: textfield;
+}
+#formular .reservation-form .input-container #pnumber::-webkit-inner-spin-button {
+  display: none;
+}
+#formular .reservation-form .input-container #pnumber::-webkit-outer-spin-button, #formular .reservation-form .input-container #pnumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#formular .reservation-form .input-container span {
+  font-size: 14px;
+  color: var(--color-tertiary-light);
+  font-family: var(--font-regular);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  transition: top 150ms ease-in-out, left 150ms ease-in-out;
+  pointer-events: none;
+}
+#formular .reservation-form .input-container.active-input span {
+  top: 0;
+  left: 5px;
+  color: var(--color-primary-contrast);
+  background-color: var(--color-tertiary);
+}
+#formular .reservation-form .input-container.active-input .input {
+  border-block-color: var(--color-primary);
+}
+#formular .reservation-form .input-container .time-picker {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.4s ease;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+#formular .reservation-form .input-container .time-picker .set-time {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+#formular .reservation-form .input-container .time-picker .label {
+  width: 60px;
+  margin: 0 5px;
+  text-align: center;
+  line-height: 34px;
+  display: inline-style;
+}
+#formular .reservation-form .input-container .time-picker .label a {
+  display: block;
+  border: 1px solid var(--color-tertiary-light);
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+#formular .reservation-form .input-container .time-picker .label a:hover, #formular .reservation-form .input-container .time-picker .label a:active {
+  background-color: var(--color-tertiary-light);
+  color: var(--color-primary-contrast);
+}
+#formular .reservation-form .input-container .time-picker .label .set {
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  line-height: 34px;
+  font-size: 20px;
+  font-weight: bold;
+  border: transparent;
+  color: var(--color-secondary);
+}
+#formular .reservation-form .input-container .time-picker #submitTime {
+  text-align: center;
+  line-height: 34px;
+  border: 1px solid var(--color-tertiary);
+  width: 128px;
+  margin: auto;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 100%;
+}
+#formular .reservation-form .input-container .time-picker #submitTime:hover {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary-contrast);
+}
+#formular .reservation-form .input-container .time-picker.open {
+  padding: 15px;
+  transition: all 0.5s ease;
+  height: auto;
+  background: var(--color-primary-contrast);
+  border: 1px solid var(--color-primary);
+}
+#formular .reservation-form .input-container .down-fill {
+  fill: var(--color-primary-contrast);
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+#formular .reservation-form #input-timepicker {
+  position: relative;
+}
+#formular .reservation-form #input-timepicker .close-svg {
+  display: none;
+  fill: var(--color-primary);
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-65%);
+  cursor: pointer;
+  z-index: 1;
+}
+#formular .reservation-form #input-timepicker .close-svg.active-svg {
+  display: block;
+}
+#formular .reservation-form .textarea-container span {
+  top: 16px;
+  transform: none;
+}
+#formular .reservation-form .textarea-container.active-input span {
+  top: -5px;
+}
+#formular .reservation-form .reservation {
+  background-color: var(--color-primary-contrast);
+  color: var(--color-secondary);
+  margin: 45px auto 75px;
+  transition: 350ms ease;
+  border: none;
+}
+#formular .reservation-form .reservation:hover, #formular .reservation-form .reservation.active-btn-reservation {
+  background-color: var(--color-primary);
+  color: var(--color-primary-contrast);
+}
+#formular .slogan {
+  position: absolute;
+  pointer-events: none;
+}
+#formular .slogan p,
+#formular .slogan span {
+  color: var(--color-tertiary-light);
+}
+#formular .slogan:nth-last-child(2) {
+  transform: rotate(-90deg);
+  top: 230px;
+  left: -2%;
+}
+#formular .slogan:last-child {
+  transform: rotate(90deg);
+  bottom: 100px;
+  right: -2%;
+}
+#formular .ui-timepicker-list {
+  max-height: 200px;
+  overflow: auto;
+  background-color: var(--color-secondary);
+  color: var(--color-primary-contrast);
+  font-size: 14px;
+  font-family: var(--font-regular);
+}
+#formular .ui-timepicker-list::-webkit-scrollbar {
+  width: 0px;
+}
+@media (max-width: 991px) {
+  #formular #reservation {
+    background: none;
+  }
+  #formular #reservation .title-section {
+    margin: 0 auto;
+  }
+  #formular #reservation .slogan:nth-last-child(2) {
+    left: -4%;
+  }
+  #formular #reservation .slogan:last-child {
+    right: -4%;
+  }
+}
+@media (max-width: 767px) {
+  #formular #reservation .title-section {
+    text-align: center;
+    font-size: 30px;
+  }
+  #formular #reservation .title-section .add-margin {
+    margin-left: 0;
+    margin-top: -35px;
+  }
+  #formular #reservation .title-section .add-margin .span-adl {
+    margin-left: 10px;
+    font-size: 56px;
+  }
+  #formular #reservation .reservation-form form {
+    max-width: 90%;
+  }
+  #formular #reservation .reservation-form .description {
+    width: 90%;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  #formular #reservation .reservation-form .reservation {
+    z-index: 1;
+    position: relative;
+  }
+  #formular #reservation .slogan:nth-last-child(2) {
+    display: none;
+    font-size: 87px;
+  }
+  #formular #reservation .slogan:last-child {
+    transform: initial;
+    bottom: 17px;
+    right: initial;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #formular #reservation .slogan p:nth-child(2) {
+    margin-right: -90px;
+  }
+}
+@media (max-width: 576px) {
+  #formular #reservation .reservation-form .description {
+    margin: 50px auto 20px;
+  }
+  #formular #reservation .reservation-form .input-container .time-picker.open {
+    padding: 15px 5px;
+  }
+  #formular #reservation .reservation-form .input-container .time-picker .label .set {
+    padding: 0;
+  }
+}
+@media (max-width: 360px) {
+  #formular #reservation .title-section {
+    font-size: 23px;
+  }
+  #formular #reservation .title-section .add-margin {
+    margin-top: -28px;
+  }
+  #formular #reservation .title-section .add-margin .span-adl {
+    font-size: 52px;
+  }
+}
+#formular .reservation-form {
+  width: 100%;
+  max-width: 100%;
+  background-color: unset;
+}
+#formular .reservation-form:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  background-color: #c9c9c9;
+}
+@media (max-width: 991px) {
+  #formular .reservation-form form {
+    max-width: 100%;
+  }
+}
+#formular .reservation-form .reservation {
+  background-color: var(--color-tertiary);
+  color: var(--white-color);
+}
+#formular .reservation-form .check {
+  margin-top: 35px;
+}
+#formular .reservation-form .check .simple-text {
+  color: var(--black-color);
+  font-size: 13px;
+}
+#formular .reservation-form .check .simple-text .yellow {
+  color: var(--golden-color);
+  border-bottom: 1px solid var(--golden-color);
+  font-size: 13px;
+  font-family: var(--interBold-font);
+}
+#formular .reservation-form .check input[id=checked] {
+  display: none;
+}
+#formular .reservation-form .check input[id=checked] + .labe {
+  border: 2px solid #ccc;
+  min-width: 24px;
+  height: 23px;
+  display: inline-block;
+  border-radius: 2px;
+  cursor: pointer;
+}
+#formular .reservation-form .check input[id=checked]:checked + .labe:after {
+  position: relative;
+  top: -3px;
+  left: 0;
+  content: "✔";
+  font-size: 14px;
+}
+#formular .reservation-form .check .labe {
+  font-size: 13px;
+  font-family: var(--interRegular-font);
+  margin-right: 15px;
+  color: var(--black-color);
+}
+#formular .reservation-form .input-container input, #formular .reservation-form .input-container textarea {
+  border-bottom: 2px solid #c9c9c9;
+  color: var(--color-secondary) !important;
+}
+#formular .reservation-form .input-container input::-moz-placeholder, #formular .reservation-form .input-container textarea::-moz-placeholder {
+  color: var(--color-secondary);
+  font-family: var(--font-extra-bold);
+}
+#formular .reservation-form .input-container input:-ms-input-placeholder, #formular .reservation-form .input-container textarea:-ms-input-placeholder {
+  color: var(--color-secondary);
+  font-family: var(--font-extra-bold);
+}
+#formular .reservation-form .input-container input::placeholder, #formular .reservation-form .input-container textarea::placeholder {
+  color: var(--color-secondary);
+  font-family: var(--font-extra-bold);
+}
+#formular .reservation-form .input-container.active-input span {
+  background-color: transparent;
+  color: var(--color-secondary);
+  font-size: 12px;
+}
+#formular .reservation-form .input-container.active-input input {
+  color: var(--color-secondary);
+}
+#formular .slogan {
+  top: 170px !important;
+  height: 100px;
+}
+#formular .slogan p {
+  color: var(--color-secondary);
+}
+#formular .slogan p span {
+  color: var(--color-primary);
+}
+@media (max-width: 991px) {
+  #formular .slogan {
+    display: none;
+  }
+}
+
+#location {
+  margin-top: 68px;
+  position: relative;
+}
+@media (max-width: 991px) {
+  #location {
+    margin-top: 40px;
+  }
+}
+#location::before {
+  position: absolute;
+  content: "";
+  background-image: url("/images/contact43.png");
+  background-repeat: no-repeat;
+  background-size: 1679px 1061px;
+  background-position-x: center;
+  background-position-y: center;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  #location::before {
+    display: none;
+  }
+}
+#location .headers .heading .offer {
+  color: var(--color-secondary);
+  font-size: 48px;
+  line-height: 54px;
+}
+@media (max-width: 991px) {
+  #location .headers .heading .offer {
+    font-size: 30px;
+    width: 80%;
+    margin: auto;
+  }
+}
+#location .headers .heading .different {
+  font-size: 105px;
+  text-shadow: none;
+}
+@media (max-width: 991px) {
+  #location .headers .heading .different {
+    font-size: 56px;
+  }
+}
+#location .headers .description {
+  margin: auto;
+  font-size: 20px;
+  width: 100%;
+  max-width: 880px;
+}
+@media (max-width: 991px) {
+  #location .headers .description {
+    font-size: 14px;
+    padding: 0 20px;
+    margin: 15px auto;
+  }
+}
+#location .headers .description .simple-text {
+  font-family: var(--font-regular);
+  margin-top: 40px;
+}
+#location .location {
+  margin-top: 45px;
+}
+@media (max-width: 1380px) {
+  #location .location .location_map {
+    padding: 0 20px;
+  }
+}
+#location .location .location_map iframe {
+  width: 100%;
+  height: 490px;
+  max-width: 1410px;
+}
+#location .location .cards_info {
+  position: relative;
+}
+#location .location .cards_info:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  top: -200px;
+  background: white;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.924807423) 28%, rgba(255, 255, 255, 0.6671043417) 78%, rgba(255, 255, 255, 0) 100%);
+}
+@media (max-width: 991px) {
+  #location .location .cards_info:before {
+    background: unset;
+  }
+}
+#location .location .cards_info .test {
+  position: relative;
+}
+#location .location .cards_info .test:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -117px;
+  background-color: #c9c9c9;
+}
+#location .location .cards_info .test .col-12 .card_box {
+  max-width: 370px;
+  height: 300px;
+  width: 100%;
+  transition: all 0.65s ease-out;
+  background-color: var(--white-color);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+@media (min-width: 1200px) {
+  #location .location .cards_info .test .col-12 .card_box:hover {
+    background-color: var(--color-secondary);
+  }
+  #location .location .cards_info .test .col-12 .card_box:hover .info .mini-header, #location .location .cards_info .test .col-12 .card_box:hover .info p {
+    color: var(--color-primary);
+  }
+}
+@media (max-width: 767px) {
+  #location .location .cards_info .test .col-12 .card_box {
+    max-width: 100%;
+  }
+}
+#location .location .cards_info .test .col-12 .card_box .info {
+  margin-top: 35px;
+}
+#location .location .cards_info .test .col-12 .card_box .info .mini-header {
+  font-size: 24px;
+  font-family: var(--font-extra-bold);
+  color: var(--color-secondary);
+}
+#location .location .cards_info .test .col-12 .card_box .info p {
+  font-family: var(--font-regular);
+  font-size: 18px;
+  color: var(--color-secondary);
+}
+@media (max-width: 991px) {
+  #location .location .cards_info .test .col-12:nth-child(3) .card_box {
+    margin: 20px auto auto auto;
+  }
+}
+@media (max-width: 767px) {
+  #location .location .cards_info .test .col-12:nth-child(1) .card_box, #location .location .cards_info .test .col-12:nth-child(2) .card_box {
+    margin-top: 20px;
+  }
+}
+
+#social-media {
+  margin-top: 190px;
+}

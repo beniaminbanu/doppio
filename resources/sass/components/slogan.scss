@@ -1,0 +1,31 @@
+.slogan {
+    text-align: end;
+    p {
+        color: var(--color-primary-contrast);
+        span {
+            color: var(--color-primary);
+        }
+        &:first-child {
+            font-family: var(--font-otella);
+            font-size: 88px;
+        }
+        &:nth-child(2) {
+            font-family: var(--font-bold);
+            font-size: 11px;
+            margin-top: -35px;
+        }
+    }
+}
+
+// @media (max-width: 435px) {
+//     .slogan {
+//         p {
+//             &:first-child {
+//                 font-size: 61px;
+//             }
+//             &:nth-child(2) {
+//                 margin-top: 30px;
+//             }
+//         }
+//     }
+// }

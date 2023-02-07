@@ -1,0 +1,40 @@
+/* Ionic CSS Variables */
+
+@import 'components/font-faces';
+
+:root {
+    /* primary */
+    --color-primary: #d19650;
+    --color-primary-rgb: rgb(209, 150, 80);
+    --color-primary-contrast: #ffffff;
+    --color-primary-contrast-rgb: rgb(255, 255, 255);
+
+    //white color
+    --white-color: #fff;
+    /* secondary */
+    --color-secondary: #000000;
+    --color-secondary-rgb: rgb(0, 0, 0);
+
+    /* tertiary */
+    --color-tertiary: #192e18;
+    --color-tertiary-rgb: rgb(25, 46, 24);
+    --color-tertiary-light: #475846;
+    --color-tertiary-light-rgb: rgb(#475846f3);
+
+    /* quaternary */
+    --color-quaternary: #f5f5f5;
+    --color-quaternary-rgb: rgb(245,245,245);
+    --color-quaternary-dark: #c9c9c9;
+    --color-quaternary-dark-rgb: rgb(201,201,201);
+
+    /* fonts */
+    --font-medium: Muller-Medium;
+    --font-bold: Muller-Bold;
+    --font-extra-bold: Muller-ExtraBold;
+    --font-black: Muller-Black;
+    --font-regular: Muller-Regular;
+
+    --font-ADLMounTiane: ADLMounTiane;
+
+    --font-otella: Otella;
+}

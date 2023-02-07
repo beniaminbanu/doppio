@@ -1,0 +1,328 @@
+
+    .reservation-form {
+        max-width: 975px;
+        width: 100%;
+        background-color: var(--color-tertiary);
+        margin-top: 15px;
+        position: relative;
+        form {
+            max-width: 60%;
+            margin: auto;
+            position: relative;
+            @media(max-width: 1200px){
+                max-width: 90%;
+            }
+        }
+        .description {
+            font-size: 18px;
+            font-family: var(--font-regular);
+            line-height: 32px;
+            color: var(--color-primary-contrast);
+            text-align: center;
+            margin: 70px auto 20px;
+            width: 65%;
+        }
+        .logo-final {
+            position: absolute;
+            top: 45px;
+            max-width: 90%;
+            pointer-events: none;
+        }
+        .input-container {
+            position: relative;
+            margin-top: 20px;
+            textarea{
+                resize: none;
+            }
+            .input {
+                color: var(--color-primary-contrast);
+                &:focus {
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+            #pnumber {
+                -moz-appearance: textfield;
+                &::-webkit-inner-spin-button {
+                    display: none;
+                }
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+            span {
+                font-size: 14px;
+                color: var(--color-tertiary-light);
+                font-family: var(--font-regular);
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 10px;
+                transition: top 150ms ease-in-out, left 150ms ease-in-out;
+                pointer-events: none;
+            }
+            &.active-input {
+                span {
+                    top: 0;
+                    left: 5px;
+                    color: var(--color-primary-contrast);
+                    background-color: var(--color-tertiary);
+                }
+                .input {
+                    border-block-color: var(--color-primary);
+                }
+            }
+            .time-picker {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                transition: all 0.4s ease;
+                height: 0;
+                overflow: hidden;
+                width: 100%;
+                position: absolute;
+                z-index: 2;
+                .set-time {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 15px;
+                }
+                .label {
+                    width: 60px;
+                    margin: 0 5px;
+                    text-align: center;
+                    line-height: 34px;
+                    display: inline-style;
+                    a {
+                        display: block;
+                        border: 1px solid var(--color-tertiary-light);
+                        cursor: pointer;
+                        font-size: 28px;
+                        font-weight: bold;
+                        border-radius: 3px;
+                        &:hover,
+                        &:active {
+                            background-color: var(--color-tertiary-light);
+                            color: var(--color-primary-contrast);
+                        }
+                    }
+                    .set {
+                        text-align: center;
+                        box-sizing: border-box;
+                        width: 100%;
+                        height: 40px;
+                        line-height: 34px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        border: transparent;
+                        color: var(--color-secondary);
+                    }
+                }
+                #submitTime {
+                    text-align: center;
+                    line-height: 34px;
+                    border: 1px solid var(--color-tertiary);
+                    width: 128px;
+                    margin: auto;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    max-width: 100%;
+                    &:hover {
+                        background-color: var(--color-tertiary);
+                        color: var(--color-primary-contrast);
+                    }
+                }
+            }
+            .time-picker.open {
+                padding: 15px;
+                transition: all 0.5s ease;
+                height: auto;
+                background: var(--color-primary-contrast);
+                border: 1px solid var(--color-primary);
+            }
+            .down-fill {
+                fill: var(--color-primary-contrast);
+                position: absolute;
+                right: 8px;
+                top: 50%;
+                transform: translateY(-50%);
+                pointer-events: none;
+            }
+        }
+        #input-timepicker {
+            position: relative;
+            .close-svg {
+                display: none;
+                fill: var(--color-primary);
+                position: absolute;
+                top: 50%;
+                right: 30px;
+                transform: translateY(-65%);
+                cursor: pointer;
+                z-index: 1;
+                &.active-svg {
+                    display: block;
+                }
+            }
+        }
+        .textarea-container {
+            span {
+                top: 16px;
+                transform: none;
+            }
+            &.active-input {
+                span {
+                    top: -5px;
+                }
+            }
+        }
+        .reservation {
+            background-color: var(--color-primary-contrast);
+            color: var(--color-secondary);
+            margin: 45px auto 75px;
+            transition: 350ms ease;
+            border: none;
+            &:hover,
+            &.active-btn-reservation {
+                background-color: var(--color-primary);
+                color: var(--color-primary-contrast);
+            }
+        }
+    }
+    .slogan {
+        position: absolute;
+        pointer-events: none;
+        p,
+        span {
+            color: var(--color-tertiary-light);
+        }
+        &:nth-last-child(2) {
+            transform: rotate(-90deg);
+            top: 230px;
+            left: -2%;
+        }
+        &:last-child {
+            transform: rotate(90deg);
+            bottom: 100px;
+            right: -2%;
+        }
+    }
+
+.ui-timepicker-list {
+    max-height: 200px;
+    overflow: auto;
+    background-color: var(--color-secondary);
+    color: var(--color-primary-contrast);
+    font-size: 14px;
+    font-family: var(--font-regular);
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    #reservation {
+        background: none;
+        .title-section {
+            margin: 0 auto;
+        }
+        .slogan {
+            &:nth-last-child(2) {
+                left: -4%;
+            }
+            &:last-child {
+                right: -4%;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    #reservation {
+        .title-section {
+            text-align: center;
+            font-size: 30px;
+            .add-margin {
+                margin-left: 0;
+                margin-top: -35px;
+                .span-adl {
+                    margin-left: 10px;
+                    font-size: 56px;
+                }
+            }
+        }
+        .reservation-form {
+            form {
+                max-width: 90%;
+            }
+            .description {
+                width: 90%;
+                font-size: 14px;
+                line-height: 24px;
+            }
+            .reservation {
+                z-index: 1;
+                position: relative;
+            }
+        }
+        .slogan {
+            &:nth-last-child(2) {
+                display: none;
+                font-size: 87px;
+            }
+            &:last-child {
+                transform: initial;
+                bottom: 17px;
+                right: initial;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            p {
+                &:nth-child(2) {
+                    margin-right: -90px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    #reservation {
+        .reservation-form {
+            .description {
+                margin: 50px auto 20px;
+            }
+            .input-container {
+                .time-picker {
+                    &.open {
+                        padding: 15px 5px;
+                    }
+                    .label {
+                        .set {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 360px) {
+    #reservation {
+        .title-section {
+            font-size: 23px;
+
+            .add-margin {
+                margin-top: -28px;
+
+                .span-adl {
+                    font-size: 52px;
+                }
+            }
+        }
+    }
+}

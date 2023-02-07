@@ -1,0 +1,532 @@
+#contact_banner {
+    background-image: url("/images/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 621px;
+    height: 100%;
+    background-position-x: center;
+
+    .social, .email {
+
+        transform: translateY(-50%);
+    }
+
+    .content_banner {
+        padding-top: 90px;
+        @media(max-width: 991px) {
+            padding-top: 160px;
+        }
+
+        .headers {
+            max-width: 1000px;
+            width: 100%;
+
+
+            .heading {
+                .offer {
+                    line-height: 48px;
+                    font-size: 56px;
+                    text-align: center;
+                    @media(max-width: 991px) {
+                        font-size: 28px;
+                        line-height: 10px;
+                    }
+                }
+
+                .yellow {
+                    line-height: 68px;
+                    text-align: center;
+                    font-size: 56px;
+                    @media(max-width: 991px) {
+                        font-size: 28px;
+                        line-height: 40px;
+                    }
+
+                    .different {
+
+                        font-size: 105px;
+                        @media(max-width: 991px) {
+                            text-align: center;
+                            display: block;
+                            //margin-top: -32px;
+                            font-size: 72px;
+                        }
+                    }
+                }
+            }
+
+            .description {
+                margin-top: 25px;
+                font-size: 24px;
+
+
+                p {
+                    font-size: 20px;
+                    font-family: var(--font-regular);
+                    color: var(--white-color);
+                    @media(max-width: 991px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+        }
+
+        .program {
+            margin-top: 80px;
+            @media(max-width: 991px){
+                margin-top: 40px;
+            }
+
+            .ora {
+
+                h4, span {
+                    color: var(--white-color);
+                    font-family: var(--font-regular);
+                    font-size: 24px;
+                    @media(max-width: 991px) {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+
+                    p {
+                        font-family: var(--font-bold);
+                        color: var(--white-color);
+                        font-size: 24px;
+                        @media(max-width: 991px) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+            .comanda {
+                margin-top: 35px;
+
+                p {
+                    font-family: var(--font-bold);
+                    color: var(--white-color);
+                    font-size: 24px;
+                    @media(max-width: 991px) {
+                        font-size: 20px;
+                    }
+
+                    span {
+                        color: var(--color-primary);
+                    }
+                }
+
+                span {
+                    color: var(--color-primary);
+                    font-size: 24px;
+                    font-family: var(--font-bold);
+                    @media(max-width: 991px) {
+                        font-size: 20px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+#formular {
+    margin-top: 132px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url("/images/contact33.png");
+        background-repeat: no-repeat;
+        background-size: 1765px 334px;
+        background-position-x: center;
+        background-position-y: center;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+    @media(max-width: 991px) {
+        margin-top: 80px;
+    }
+
+
+    .headers {
+        .heading {
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                background-image: url("/images/Logo-Doppio_final-04.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                max-width: 930px;
+                width: 100%;
+                height: 162px;
+                z-index: -1;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 47px;
+                @media(max-width: 991px) {
+                    background-image: url("/images/Logo-Doppio_final-04mobile.png");
+                    max-width: 357px;
+                    height: 64px;
+
+                }
+
+            }
+
+            .offer {
+                color: var(--color-secondary);
+                font-size: 48px;
+                line-height: 29px;
+                @media(max-width: 991px) {
+                    font-size: 30px;
+                    width: 80%;
+                    margin: auto;
+                }
+            }
+
+            .different {
+                font-size: 105px;
+                text-shadow: none;
+                @media(max-width: 991px) {
+                    font-size: 56px;
+                }
+            }
+        }
+
+        .description {
+            margin: 65px auto;
+            font-size: 20px;
+            width: 100%;
+            max-width: 880px;
+            @media(max-width: 991px) {
+                font-size: 14px;
+                padding: 0 20px;
+                margin: 15px auto;
+
+            }
+
+
+            .simple-text {
+                font-family: var(--font-regular);
+                margin-top: 40px;
+            }
+
+        }
+    }
+
+    @import 'homepage/reservation';
+
+    .reservation-form {
+        width: 100%;
+        max-width: 100%;
+        background-color: unset;
+
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            background-color: #c9c9c9;
+        }
+
+        form {
+            @media(max-width: 991px) {
+                max-width: 100%;
+            }
+        }
+
+        .reservation {
+
+            background-color: var(--color-tertiary);
+            color: var(--white-color);
+
+        }
+
+        .check {
+            margin-top: 35px;
+
+            .simple-text {
+                color: var(--black-color);
+                font-size: 13px;
+
+                .yellow {
+                    color: var(--golden-color);
+                    border-bottom: 1px solid var(--golden-color);
+                    font-size: 13px;
+                    font-family: var(--interBold-font);
+                }
+            }
+
+            input[id="checked"] {
+                display: none;
+            }
+
+            input[id="checked"] + .labe {
+                border: 2px solid #ccc;
+                min-width: 24px;
+                height: 23px;
+                display: inline-block;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+
+            input[id="checked"]:checked {
+                + .labe {
+                    &:after {
+                        position: relative;
+                        top: -3px;
+                        left: 0;
+                        content: "\2714";
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .labe {
+                font-size: 13px;
+                font-family: var(--interRegular-font);
+                margin-right: 15px;
+                color: var(--black-color);
+            }
+        }
+
+        .input-container {
+            input, textarea {
+                border-bottom: 2px solid #c9c9c9;
+                color: var(--color-secondary) !important;
+
+                &::placeholder {
+                    color: var(--color-secondary);
+                    font-family: var(--font-extra-bold);
+
+                }
+            }
+
+            &.active-input {
+                span {
+                    background-color: transparent;
+                    color: var(--color-secondary);
+                    font-size: 12px;
+                }
+
+                input {
+                    color: var(--color-secondary);
+                }
+            }
+        }
+    }
+
+    .slogan {
+        top: 170px !important;
+        height: 100px;
+
+        p {
+            color: var(--color-secondary);
+
+            span {
+                color: var(--color-primary);
+            }
+        }
+
+        @media(max-width: 991px) {
+            display: none;
+        }
+    }
+}
+
+#location {
+    margin-top: 68px;
+    position: relative;
+    @media(max-width: 991px){
+        margin-top: 40px;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url("/images/contact43.png");
+        background-repeat: no-repeat;
+        background-size: 1679px 1061px;
+        background-position-x: center;
+        background-position-y: center;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        @media(max-width: 991px){
+            display: none;
+        }
+    }
+
+
+    .headers {
+        .heading {
+
+            .offer {
+                color: var(--color-secondary);
+                font-size: 48px;
+                line-height: 54px;
+                @media(max-width: 991px) {
+                    font-size: 30px;
+                    width: 80%;
+                    margin: auto;
+                }
+            }
+
+            .different {
+                font-size: 105px;
+                text-shadow: none;
+                @media(max-width: 991px) {
+                    font-size: 56px;
+                }
+            }
+        }
+
+        .description {
+            margin: auto;
+            font-size: 20px;
+            width: 100%;
+            max-width: 880px;
+            @media(max-width: 991px) {
+                font-size: 14px;
+                padding: 0 20px;
+                margin: 15px auto;
+
+            }
+
+
+            .simple-text {
+                font-family: var(--font-regular);
+                margin-top: 40px;
+            }
+
+        }
+    }
+
+    .location {
+        margin-top: 45px;
+
+        .location_map {
+            @media(max-width: 1380px) {
+                padding: 0 20px;
+
+            }
+
+            iframe {
+                width: 100%;
+                height: 490px;
+                max-width: 1410px;
+
+            }
+        }
+
+        .cards_info {
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                max-height: 200px;
+                top: -200px;
+                background: rgb(255, 255, 255);
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0.9248074229691877) 28%, rgba(255, 255, 255, 0.6671043417366946) 78%, rgba(255, 255, 255, 0) 100%);
+                @media(max-width: 991px) {
+                    background: unset;
+                }
+            }
+            .test {
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    bottom: -117px;
+                    background-color: #c9c9c9;
+                }
+
+                .col-12 {
+                    .card_box {
+                        max-width: 370px;
+                        height: 300px;
+                        width: 100%;
+                        transition: all .65s ease-out;
+                        background-color: var(--white-color);
+                        box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+                        @media(min-width: 1200px){
+                            &:hover{
+                                background-color: var(--color-secondary);
+                                .info {
+                                    .mini-header, p {
+                                        color: var(--color-primary);
+                                    }
+                                }
+                            }
+                        }
+                        @media(max-width: 767px) {
+                            max-width: 100%;
+
+                        }
+
+                        .info {
+                            margin-top: 35px;
+
+                            .mini-header {
+                                font-size: 24px;
+                                font-family: var(--font-extra-bold);
+                                color: var(--color-secondary);
+                            }
+
+                            p {
+                                font-family: var(--font-regular);
+                                font-size: 18px;
+                                color: var(--color-secondary);
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .card_box {
+
+                            @media(max-width: 991px) {
+                                margin: 20px auto auto auto;
+
+                            }
+                        }
+                    }
+
+                    &:nth-child(1), &:nth-child(2) {
+                        .card_box {
+                            @media(max-width: 767px) {
+                                margin-top: 20px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+#social-media {
+    margin-top: 190px;
+
+}
+
+
+
+
+
+
+
